@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  user-select: none;
+  cursor: pointer;
+}
+
+.navItems {
+  display: flex;
+  gap: 1rem;
+}
+
+.navItems ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navItems ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navItems button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s ease-in-out;
+}
+
+.navItems button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1.5px solid black;
+}
