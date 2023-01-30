@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E6E7E9;
+}
+
+.footer h2 {
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer p {
+    color: #A4A7B2;
+}
+
