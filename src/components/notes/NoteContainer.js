@@ -9,8 +9,8 @@ const NoteContainer = () => {
                     <h1>Welcome, Maclemon</h1>
 
                     <div className={styles.buttons}>
-                        <button>Profile</button>
-                        <button>Log out</button>
+                        <button><i className="bi bi-person"></i> Profile</button>
+                        <button><i className="bi bi-power"></i> Log out</button>
                     </div>
                 </div>
 
