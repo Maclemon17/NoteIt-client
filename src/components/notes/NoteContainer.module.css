@@ -1,5 +1,10 @@
 main {
     margin-top: 5rem;
+    height: 70vh;
+}
+
+.notes {
+    overflow: hidden;
 }
 
 .actionsBox {
@@ -27,4 +32,23 @@ main {
     border: none;
     background-color: black;
     color: white;
+}
+
+.notesGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.note {
+   width: 32.33%;
+   padding: 0.5rem 1rem;
+   border: 1px solid #E6E7E9;
+   border-radius: 15px;
+   margin: 0;
+}
+
+.note h2 {
+    margin: 5px 0 0 0;
+    /* font-size: 1.5rem; */
 }

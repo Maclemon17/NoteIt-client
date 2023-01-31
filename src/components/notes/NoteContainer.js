@@ -15,8 +15,32 @@ const NoteContainer = () => {
                 </div>
 
                 <div className={styles.notesGroup}>
-                    <div className="note">
-                        <h3 className={styles.title}>Title</h3>
+                    <div className={styles.note}>
+                        <h2 className={styles.title}>Title</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                        </p>
+                    </div>
+                    <div className={styles.note}>
+                        <h2 className={styles.title}>Title</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                        </p>
+                    </div>
+                    <div className={styles.note}>
+                        <h2 className={styles.title}>Title</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                        </p>
+                    </div>
+                    <div className={styles.note}>
+                        <h2 className={styles.title}>Title</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                        </p>
+                    </div>
+                    <div className={styles.note}>
+                        <h2 className={styles.title}>Title</h2>
                         <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
                         </p>
