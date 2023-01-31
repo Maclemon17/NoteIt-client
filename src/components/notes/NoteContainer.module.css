@@ -1,54 +1,68 @@
 main {
-    margin-top: 5rem;
-    height: 70vh;
+  margin: 5rem 0;
+  /* height: 70vh; */
 }
 
 .notes {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .actionsBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .buttons button {
-    border: 2px solid black;
-    padding: 0.7rem 2rem;
-    background-color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+  border: 2px solid black;
+  padding: 0.7rem 2rem;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .buttons button:hover {
-    border: none;
-    background-color: black;
-    color: white;
+  border: none;
+  background-color: black;
+  color: white;
 }
 
 .notesGroup {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
 .note {
-   width: 32.33%;
-   padding: 0.5rem 1rem;
-   border: 1px solid #E6E7E9;
-   border-radius: 15px;
-   margin: 0;
+  width: 32.333%;
+  margin: 0;
 }
 
-.note h2 {
-    margin: 5px 0 0 0;
-    /* font-size: 1.5rem; */
+/* @media screen and (min-width: 768px) {
+    .note {
+        width: 32.333%;
+    }
 }
+
+@media (max-width: 720px) {
+    .note {
+        width: 100%;
+    }
+} */
+
+.card {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e6e7e9;
+  border-radius: 15px;
+  word-wrap: break-word;
+}
+

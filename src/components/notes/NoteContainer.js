@@ -16,35 +16,92 @@ const NoteContainer = () => {
 
                 <div className={styles.notesGroup}>
                     <div className={styles.note}>
-                        <h2 className={styles.title}>Title</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                        </p>
+                        <div className={styles.card}>
+                            <div className={styles.cardHeader}>
+                                <h2 className={styles.title}>Title</h2>
+                            </div>
+
+                            <div className={styles.cardBody}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                                </p>
+                            </div>
+
+                            <div className={styles.cardFooter}>
+                                <small>Wed 12-01 01:00</small>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.note}>
-                        <h2 className={styles.title}>Title</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                        </p>
+                        <div className={styles.card}>
+                            <div className={styles.cardHeader}>
+                                <h2 className={styles.title}>Title</h2>
+                            </div>
+
+                            <div className={styles.cardBody}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                                </p>
+                            </div>
+
+                            <div className={styles.cardFooter}>
+                                <small>Wed 12-01 01:00</small>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.note}>
-                        <h2 className={styles.title}>Title</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                        </p>
+                        <div className={styles.card}>
+                            <div className={styles.cardHeader}>
+                                <h2 className={styles.title}>Title</h2>
+                            </div>
+
+                            <div className={styles.cardBody}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                                </p>
+                            </div>
+
+                            <div className={styles.cardFooter}>
+                                <small>Wed 12-01 01:00</small>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.note}>
-                        <h2 className={styles.title}>Title</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                        </p>
+                        <div className={styles.card}>
+                            <div className={styles.cardHeader}>
+                                <h2 className={styles.title}>Title</h2>
+                            </div>
+
+                            <div className={styles.cardBody}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                                </p>
+                            </div>
+
+                            <div className={styles.cardFooter}>
+                                <small>Wed 12-01 01:00</small>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.note}>
-                        <h2 className={styles.title}>Title</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                        </p>
+                        <div className={styles.card}>
+                            <div className={styles.cardHeader}>
+                                <h2 className={styles.title}>Title</h2>
+                            </div>
+
+                            <div className={styles.cardBody}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
+                                </p>
+                            </div>
+
+                            <div className={styles.cardFooter}>
+                                <small>Wed 12-01 01:00</small>
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </main>
