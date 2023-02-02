@@ -45,95 +45,27 @@ main {
   width: 100%;
 }
 
-.cardWrapInner {
-  display: flex;
-  /* flex-direction: row; */
-  padding: 1rem 0.5rem 0 0.5rem;
-  gap: 0.5rem;
-}
-
-/* .cardWrapInner:nth-child(n) {
-  padding: 0 1rem;
-} */
-
-.card {
-  border: 3px solid #e6e7e9;
-  border-radius: 1rem;
-  background-color: white;
-  width: 100%;
-  padding: 1.2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  transition: all 300ms ease-in-out;
-  user-select: none;
-  cursor: pointer;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(0.95);
-}
-
-.cardItem {
-  float: right;
-}
-
-.cardTitle h2 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-style: bold;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.cardText {
-  flex-grow: 1;
-}
-
-.cardText p {
-  margin-top: 5px;
-}
-
-@media (min-width: 480px) {
-  .cardWrapInner {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .cardWrapInner {
-    /* width: 32.53%; */
-    width: 33.333%;
-  }
-}
-
-.flexible {
-  flex-grow: 1;
-}
-
 /* ##########   ADD NOTE   ############*/
 .add {
-  background-color: black;
+  background-color: black !important;
   color: white;
-
   transition: 300ms ease-in-out;
+  padding: 1rem;
 }
 
 .add:hover {
-  background-color: white;
-  color: black;
-  border-color: black;
-  box-shadow: unset;
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+  box-shadow: unset !important;
   transform: scale(0.95);
 }
 
-.add .cardText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* gap: 0.1rem; */
+.add > div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .add i {

@@ -38,11 +38,12 @@
   border-radius: 5px;
   cursor: pointer;
   user-select: none;
-  transition: 0.5s ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .navItems button:hover {
   background-color: #ffffff;
   color: #000000;
   border: 1.5px solid black;
+  transform: scale(0.9);
 }
