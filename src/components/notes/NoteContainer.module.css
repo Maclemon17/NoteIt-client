@@ -26,13 +26,14 @@ main {
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .buttons button:hover {
   border: none;
   background-color: black;
   color: white;
+  transform: scale(0.9);
 }
 
 /* ##########   NOTES GROUP   ############*/
@@ -63,6 +64,15 @@ main {
   padding: 1.2rem 1.5rem;
   display: flex;
   flex-direction: column;
+  transition: all 300ms ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
 }
 
 .cardItem {
@@ -102,8 +112,31 @@ main {
   flex-grow: 1;
 }
 
-
 /* ##########   ADD NOTE   ############*/
 .add {
-  background-color: black !important;
+  background-color: black;
+  color: white;
+
+  transition: 300ms ease-in-out;
+}
+
+.add:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  box-shadow: unset;
+  transform: scale(0.95);
+}
+
+.add .cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.1rem; */
+}
+
+.add i {
+  font-weight: bold;
+  font-size: 3rem;
 }

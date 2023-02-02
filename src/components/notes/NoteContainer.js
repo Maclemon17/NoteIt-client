@@ -17,8 +17,8 @@ const NoteContainer = () => {
                 {/* NOTES CARDS */}
                 <div className={styles.notesGroup}>
                     {/* ADD NEW NOTE */}
-                    <div className={styles.cardWrapInner} id='add' >
-                        <div className={[styles.card, styles.add]} id='add'>
+                    <div className={styles.cardWrapInner} >
+                        <div className={`${styles.card} ${styles.add}`}>
                             <div className={styles.cardText}>
                                 <i className="bi bi-plus-circle"></i>
                                 <h3>Add New Note</h3>
