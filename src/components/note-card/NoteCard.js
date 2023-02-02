@@ -1,7 +1,7 @@
 import React from 'react';
 import noteStyles from './note.module.css';
 
-const Note = () => {
+const NoteCard = () => {
     return (
         <>
             <div className={noteStyles.cardWrapInner}>
@@ -30,4 +30,4 @@ const Note = () => {
     )
 }
 
-export default Note
+export default NoteCard

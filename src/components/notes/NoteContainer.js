@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './NoteContainer.module.css'
-import Note from '../note/Note';
-import cardStyles from '../note/note.module.css'
+import NoteCard from '../note-card/NoteCard';
+import cardStyles from '../note-card/note.module.css'
 
 const NoteContainer = () => {
     return (
@@ -30,10 +30,10 @@ const NoteContainer = () => {
                     </div>
 
                     {/* NOTES GOES HERE...... */}
-                   <Note />
-                   <Note />
-                   <Note />
-                   <Note />
+                   <NoteCard />
+                   <NoteCard />
+                   <NoteCard />
+                   <NoteCard/>
                     
                 </div>
             </div>
