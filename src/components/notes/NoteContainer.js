@@ -14,102 +14,24 @@ const NoteContainer = () => {
                     </div>
                 </div>
 
-                {/* <div className={styles.notesGroup}>
-                    <div className={styles.note}>
-                        <div className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <h2 className={styles.title}>Title</h2>
-                            </div>
-
-                            <div className={styles.cardBody}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                                </p>
-                            </div>
-
-                            <div className={styles.cardFooter}>
-                                <small>Wed 12-01 01:00</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.note}>
-                        <div className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <h2 className={styles.title}>Title</h2>
-                            </div>
-
-                            <div className={styles.cardBody}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                                </p>
-                            </div>
-
-                            <div className={styles.cardFooter}>
-                                <small>Wed 12-01 01:00</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.note}>
-                        <div className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <h2 className={styles.title}>Title</h2>
-                            </div>
-
-                            <div className={styles.cardBody}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                                </p>
-                            </div>
-
-                            <div className={styles.cardFooter}>
-                                <small>Wed 12-01 01:00</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.note}>
-                        <div className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <h2 className={styles.title}>Title</h2>
-                            </div>
-
-                            <div className={styles.cardBody}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                                </p>
-                            </div>
-
-                            <div className={styles.cardFooter}>
-                                <small>Wed 12-01 01:00</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.note}>
-                        <div className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <h2 className={styles.title}>Title</h2>
-                            </div>
-
-                            <div className={styles.cardBody}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Delectus vel sequi neque voluptatum repellendus vitae unde ratione odio quae facilis.
-                                </p>
-                            </div>
-
-                            <div className={styles.cardFooter}>
-                                <small>Wed 12-01 01:00</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div> */}
-
-
+                {/* NOTES CARDS */}
                 <div className={styles.notesGroup}>
+                    {/* ADD NEW NOTE */}
+                    <div className={styles.cardWrapInner} id='add' >
+                        <div className={[styles.card, styles.add]} id='add'>
+                            <div className={styles.cardText}>
+                                <i className="bi bi-plus-circle"></i>
+                                <h3>Add New Note</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    {/*  */}
                     <div className={styles.cardWrapInner}>
                         <div className={styles.card}>
                             <div className={styles.cardTitle}>
-                                <h2>Second Card Title</h2>
+                                <h2>Card Title</h2>
                             </div>
         
                             <div className={styles.cardText}>
@@ -130,7 +52,7 @@ const NoteContainer = () => {
                     <div className={styles.cardWrapInner}>
                         <div className={styles.card}>
                             <div className={styles.cardTitle}>
-                                <h2>Second Card Title</h2>
+                                <h2>Card Title</h2>
                             </div>
         
                             <div className={styles.cardText}>
@@ -151,7 +73,7 @@ const NoteContainer = () => {
                     <div className={styles.cardWrapInner}>
                         <div className={styles.card}>
                             <div className={styles.cardTitle}>
-                                <h2>Second Card Title</h2>
+                                <h2>Card Title</h2>
                             </div>
         
                             <div className={styles.cardText}>
@@ -172,7 +94,7 @@ const NoteContainer = () => {
                     <div className={styles.cardWrapInner}>
                         <div className={styles.card}>
                             <div className={styles.cardTitle}>
-                                <h2>Second Card Title</h2>
+                                <h2>Card Title</h2>
                             </div>
         
                             <div className={styles.cardText}>
@@ -193,7 +115,7 @@ const NoteContainer = () => {
                     <div className={styles.cardWrapInner}>
                         <div className={styles.card}>
                             <div className={styles.cardTitle}>
-                                <h2>Second Card Title</h2>
+                                <h2>Card Title</h2>
                             </div>
         
                             <div className={styles.cardText}>
