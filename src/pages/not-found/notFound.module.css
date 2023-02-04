@@ -1,0 +1,24 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    gap: 3rem;
+}
+
+.icons i {
+    font-size: 3rem;
+}
+
+.pageContent h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
