@@ -18,7 +18,7 @@ const Note = () => {
 
                 <div className={styles.actions}>
                     <button><i className="bi bi-pencil"></i> Edit Note</button>
-                    <button><i className="bi bi-trash"></i> DeleteNote</button>
+                    <button><i className="bi bi-trash"></i> Delete Note</button>
                 </div>
             </div>
         </main>

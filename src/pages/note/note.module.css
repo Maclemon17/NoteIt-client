@@ -6,7 +6,7 @@
 }
 
 .text {
-  border: 2px solid #e6e7e9;
+  border: 3px solid #e6e7e9;
   border-radius: 1rem;
   padding: 5px 2rem;
   height: 400px;
@@ -38,5 +38,4 @@
 button i {
     font-size: 1.2rem;
     font-weight: bold;
-
 }
