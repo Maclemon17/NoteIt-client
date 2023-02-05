@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className={`${styles.footer} container`}>
-        <Link to='/'><h2>NoteIt</h2></Link>
+      <Link to='/'><h2>NoteIt</h2></Link>
 
-        <p>&copy; 2023 NoteIt by Maclemon. All rights reserveved.</p>
+      <p>&copy; 2023 NoteIt by Maclemon. All rights reserveved.</p>
     </footer>
   )
 }

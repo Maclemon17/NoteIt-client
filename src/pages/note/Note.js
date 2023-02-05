@@ -3,7 +3,7 @@ import styles from './note.module.css'
 
 const Note = () => {
     return (
-        <main>
+        <section>
             <div className={`container ${styles.pageContent}`}>
                 <div className={styles.text} contentEditable="true">
                     <h2>Title</h2>
@@ -21,7 +21,7 @@ const Note = () => {
                     <button><i className="bi bi-trash"></i> Delete Note</button>
                 </div>
             </div>
-        </main>
+        </section>
     )
 }
 

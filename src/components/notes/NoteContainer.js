@@ -5,7 +5,7 @@ import cardStyles from '../note-card/note.module.css'
 
 const NoteContainer = () => {
     return (
-        <main>
+        <section>
             <div className={`container ${styles.notes}`}>
                 <div className={styles.actionsBox}>
                     <h1>Welcome, Maclemon</h1>
@@ -37,7 +37,7 @@ const NoteContainer = () => {
                     
                 </div>
             </div>
-        </main>
+        </section>
     )
 }
 

@@ -5,7 +5,7 @@ const PageNotFound = () => {
     return (
         // <>
 
-        <main>
+        <section>
             <div className={`container ${styles.container}`}>
 
                 <div className={styles.pageContent}>
@@ -19,7 +19,7 @@ const PageNotFound = () => {
                 </div>
             </div>
 
-        </main>
+        </section>
         // </>
     )
 }

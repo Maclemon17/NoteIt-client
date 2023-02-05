@@ -12,16 +12,16 @@ function App() {
 	return (
 		<>
 			<Header />
-
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/note" element={<Note />} />
-				<Route path="/dashboard" element={<Dashboard />} />
-				<Route path="/login" element={<Signin />} />
-				{/* 404 page not found */}
-				<Route path="*" element={<PageNotFound />} />
-			</Routes>
-
+			<main>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/note" element={<Note />} />
+					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/login" element={<Signin />} />
+					{/* 404 page not found */}
+					<Route path="*" element={<PageNotFound />} />
+				</Routes>
+			</main>
 			<Footer />
 		</>
 	);
