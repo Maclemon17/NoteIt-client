@@ -1,11 +1,11 @@
-main .pageContent {
+section .pageContent {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-button {
+.hero button {
   border: 2px solid black;
   padding: 0.7rem 2rem;
   background-color: white;
@@ -16,7 +16,7 @@ button {
   transition: 300ms ease-in-out;
 }
 
-button:hover {
+.hero button:hover {
   border: none;
   background-color: black;
   color: white;

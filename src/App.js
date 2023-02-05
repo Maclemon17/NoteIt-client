@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Signin from "./components/auth/signin/Signin";
+import Signup from "./components/auth/signup/Signup";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/note" element={<Note />} />
 					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/login" element={<Signin />} />
+					<Route path="/signup" element={<Signup />} />
 					{/* 404 page not found */}
 					<Route path="*" element={<PageNotFound />} />
 				</Routes>
