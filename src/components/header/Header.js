@@ -10,7 +10,7 @@ const Header = () => {
             <nav className={styles.navItems}>
                 <ul>
                     <li>About</li>
-                    <li>Sign in</li>
+                    <Link to='signin'><li>Sign in</li></Link>
                     <li>FAQs</li>
                 </ul>
 

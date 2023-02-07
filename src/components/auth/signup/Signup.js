@@ -28,7 +28,7 @@ const Signup = () => {
 
             <p className={styles.para}>
                 Already have an account? {" "}
-                <Link to="/login">Sign In</Link>
+                <Link to="/signin">Sign In</Link>
             </p>
         </div>
 

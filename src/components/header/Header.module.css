@@ -15,7 +15,7 @@
 
 .navItems {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   gap: 2rem;
 }
 
@@ -27,10 +27,25 @@
 .navItems ul li {
   list-style-type: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.navItems ul li::after {
+  content: " ";
+  display: block;
+  margin-top: 1rem;
+  /* border-bottom: 2px solid black; */
+  /* width: 0;   */
+}
+
+.navItems ul li:hover {
+  border-bottom: 3px solid black;
+}
+
+
 .navItems button {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   border: none;
   background-color: #000000;

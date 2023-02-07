@@ -11,7 +11,10 @@ const Home = () => {
 				<div className={`container ${styles.pageContent}`}>
 					<div className={styles.hero}>
 						<h1>Write better with NoteIt....</h1>
-						<button>Get Started</button>
+						<div>
+							<button>Get Started</button>
+							<button>Get Started</button>
+						</div>
 					</div>
 				</div>
 			</section>
