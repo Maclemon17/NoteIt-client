@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './NoteContainer.module.css'
 import NoteCard from '../note-card/NoteCard';
 import cardStyles from '../note-card/note.module.css'
 
 const NoteContainer = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <section>
             <div className={`container ${styles.notes}`}>

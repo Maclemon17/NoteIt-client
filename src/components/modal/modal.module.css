@@ -1,0 +1,31 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: transparent; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.9); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modalContainer {
+  width: 500px;
+  /* height: 500px; */
+  border-radius: 12px;
+  /* background-color: transparent ; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+
+
+
+
+
