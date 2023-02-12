@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Signin = () => {
     return (
         <section className='container'>
-            <form>
+            <form className={styles.formWrapper}>
                 <div className={styles.formContainer}>
                     <h2>Sign in to continue</h2>
                     <div className={styles.formGroup}>
