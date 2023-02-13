@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './NoteContainer.module.css'
 import NoteCard from '../note-card/NoteCard';
 import cardStyles from '../note-card/note.module.css'
 
-const NoteContainer = () => {
-    const [modalOpen, setModalOpen] = useState(false);
+const NoteContainer = ({ setOpenModal }) => {
 
     return (
         <section>
@@ -22,21 +21,23 @@ const NoteContainer = () => {
                 <div className={styles.notesGroup}>
                     {/* ADD NEW NOTE */}
                     <div className={cardStyles.cardWrapInner} >
-                        <div className={`${cardStyles.card} ${styles.add}`}>
-                            <div className={cardStyles.cardText}>
+                        <div className={`${cardStyles.card} ${styles.add}`}
+                            onClick={() => setOpenModal(true)}
+                        >
+                            <div className={cardStyles.cardText} >
                                 <i className="bi bi-plus-circle"></i>
                                 <h3>Add New Note</h3>
                             </div>
-                            
+
                         </div>
                     </div>
 
                     {/* NOTES GOES HERE...... */}
-                   <NoteCard />
-                   <NoteCard />
-                   <NoteCard />
-                   <NoteCard/>
-                    
+                    <NoteCard />
+                    <NoteCard />
+                    <NoteCard />
+                    <NoteCard />
+
                 </div>
             </div>
         </section>

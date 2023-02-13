@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './modal.module.css'
 
-const Modal = () => {
+const Modal = ({ setOpenModal }) => {
     return (
         <>
             <div className={styles.modal}>
-                <button className={styles.closeBtn}><i className="bi bi-x"></i></button>
+                <button className={styles.closeBtn} onClick={() => setOpenModal(false)}>
+                    <i className="bi bi-x"></i>
+                </button>
                 <div className={styles.modalContent}>
                     <form>
                         <h1>Add New Note</h1>
