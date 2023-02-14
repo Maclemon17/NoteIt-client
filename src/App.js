@@ -18,7 +18,7 @@ function App() {
 		<>
 			<Header />
 			<main>
-				{modalOpen && <Modal setOpenModal={setModalOpen} />}
+				{modalOpen && <Modal setOpenModal={setModalOpen} open={modalOpen} />}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/note" element={<Note />} />
