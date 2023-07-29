@@ -1,31 +1,35 @@
 import React from 'react';
 import noteStyles from './note.module.css';
+import { useNavigate } from 'react-router-dom';
 
-const NoteCard = () => {
+const NoteCard = ({ note, edit, deleteNote }) => {
+    const navigate = useNavigate()
+    // console.log(note);
     return (
         <>
-            <div className={noteStyles.cardWrapInner}>
-                <div className={noteStyles.card}>
+            <div id={note._id} className={noteStyles.cardWrapInner}>
+                <div className={noteStyles.card} >
                     <div className={noteStyles.cardTitle}>
-                        <h2>Note Title</h2>
+                        <h2>{note.title}</h2>
                     </div>
 
-                    <div className={noteStyles.cardText}>
-                        <p>Celiac pour-over fanny pack, adaptogen yuccie trust fund
-                            tote bag man braid activated charcoal narwhal church-key crucifix.
-                            Farm-to-table sartorial retro snackwave mixtape,
-                            live-edge 8-bit activated charcoal art party succulents.
-                            Crucifix actually try-hard wayfarers echo park skateboard,
-                            street art shaman intelligentsia humblebrag celiac umami farm-to-table.
-                        </p>
+                    <div className={noteStyles.cardText}
+                        onClick={() => navigate(`/note/${note._id}`, { state: note })}
+                    >
+                        <p>{note.note}</p>
                     </div>
                     <div className={noteStyles.cardItem}>
-                        <small>01 Feb, 2023</small>
+                        <small>{note.createdAt}</small>
+
+                        <span>
+                            <i onClick={() => edit(note)} className="bi bi-pencil"></i>
+                            <i onClick={() => deleteNote(note._id)} className="bi bi-trash"></i>
+                        </span>
                     </div>
 
                 </div>
             </div>
-            
+
         </>
     )
 }

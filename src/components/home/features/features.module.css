@@ -1,0 +1,41 @@
+.features {
+    margin-top: 5rem;
+   /* text-align: center; */
+}
+
+.features h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.featuresGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.featuresGroup p {
+    flex-grow: 1;
+}
+
+.feature {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.feature i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    align-self: center;
+    background-color: #808080;
+    color: white;
+}
+
+.feature p {
+    color: #9c9c9c;
+    flex-grow: 1;
+}

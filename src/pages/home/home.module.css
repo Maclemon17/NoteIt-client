@@ -1,13 +1,13 @@
 section .pageContent {
-    height: 60vh;
+  height: 60vh;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
 }
 
 .hero button {

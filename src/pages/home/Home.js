@@ -1,24 +1,18 @@
 import React from 'react'
-import styles from './home.module.css';
+import Hero from '../../components/home/hero/Hero'
+import Features from '../../components/home/features/Features'
+import Review from '../../components/home/reviews/Review'
+import ContactUs from '../../components/home/contact-us/ContactUs'
+import Download from '../../components/home/download/Download'
 
 const Home = () => {
 	return (
 		<>
-			{/* <Header /> */}
-			{/* <NoteContainer /> */}
-
-			<section>
-				<div className={`container ${styles.pageContent}`}>
-					<div className={styles.hero}>
-						<h1>Write better with NoteIt....</h1>
-						<div>
-							<button>Get Started</button>
-							<button>Get Started</button>
-						</div>
-					</div>
-				</div>
-			</section>
-			{/* <Footer /> */}
+			<Hero />
+			<Features />
+			<Review />
+			<ContactUs />
+			<Download />
 		</>
 	)
 }

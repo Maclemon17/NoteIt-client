@@ -24,7 +24,21 @@
 }
 
 .cardItem {
-  float: right;
+  /* float: right; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardItem span {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cardItem span:hover i {
+  transform: scale(1.5);
+  /* color: red; */
+  /* gap: 1.9rem; */
 }
 
 .cardTitle h2 {

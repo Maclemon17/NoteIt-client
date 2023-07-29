@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-end;
 }
 
 .text {
@@ -12,11 +11,18 @@
   height: 400px;
 }
 
+.timestamps {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
 .actions {
   display: flex;
   gap: 1rem;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
+
 .actions button {
   border: 2px solid black;
   padding: 0.7rem 2rem;
@@ -36,6 +42,6 @@
 }
 
 button i {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

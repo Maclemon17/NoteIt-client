@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
+import Button from '../button/Button';
 
 const Header = () => {
     return (
@@ -14,7 +15,8 @@ const Header = () => {
                     <li>FAQs</li>
                 </ul>
 
-                <button>Subscribe</button>
+                {/* <button>Subscribe</button> */}
+                <Button text="Subscribe" />
             </nav>
         </header>
     )

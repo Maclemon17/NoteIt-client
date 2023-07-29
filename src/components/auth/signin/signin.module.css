@@ -68,3 +68,22 @@
 .para a {
   text-decoration: underline;
 }
+
+.errors {
+  color: red;
+}
+
+.formContainer input .valid {
+  border: 2px solid green;
+}
+
+.formGroup:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+} 
+
+input[type="checkbox"] {
+  width: unset;
+}

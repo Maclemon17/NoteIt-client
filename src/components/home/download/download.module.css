@@ -1,0 +1,47 @@
+.download {
+  background-color: #000;
+  color: white;
+  /* position: relative; */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  /* z-index: -1; */
+}
+
+.heroText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroText h3 {
+  font-size: 1.5rem;
+}
+
+.heroText h1 {
+  font-size: 3.3rem;
+}
+
+.heroText .downloadButton {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.heroImage {
+  width: 40%;
+  height: 645px;
+  object-fit: contain;
+}
+
+.heroImage img {
+  /* width: 482.45px;
+  height: 864.02px; */
+  width: 100%;
+  /* height: auto; */
+  margin-top: 90px;
+}

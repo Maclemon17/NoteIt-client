@@ -43,8 +43,7 @@
   border-bottom: 3px solid black;
 }
 
-
-.navItems button {
+/* .navItems button {
   padding: 1rem 2rem;
   font-size: 1rem;
   border: none;
@@ -61,7 +60,7 @@
   color: #000000;
   border: 1.5px solid black;
   transform: scale(0.9);
-}
+} */
 
 a {
   text-decoration: none;

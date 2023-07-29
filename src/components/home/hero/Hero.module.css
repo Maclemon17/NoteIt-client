@@ -1,0 +1,48 @@
+.heroBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroText {
+  width: 50%;
+}
+
+.heroText h1 {
+  font-size: 3.5rem;
+  /* line-height: 7rem; */
+}
+
+.heroText p {
+  font-size: 1.5rem;
+  color: #9c9c9c;
+  /* font-family: co; */
+}
+
+.heroText .getAppBtn {
+  display: flex;
+  gap: 2rem;
+}
+
+.getAppBtn img {
+  height: 100%;
+  width: auto;
+}
+
+.heroImg {
+  width: 40%;
+  background-image: url("../../../assets/circle.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -52px;
+  margin-left: 100px;
+}
+
+.heroImg img {
+  /* width: 315px; */
+  /* height: 613px; */
+  float: right;
+  clear: both;
+  z-index: -1;
+}

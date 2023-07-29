@@ -1,0 +1,46 @@
+.review {
+  background-color: #000;
+  color: white;
+  margin-top: 5rem;
+}
+
+.reviewCard {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  margin: auto;
+  padding: 5rem 0;
+  text-align: center;
+  width: 80%;
+}
+
+.text {
+  text-align: center;
+}
+
+.text i {
+  color: #feca10;
+  align-self: center;
+}
+
+.text p {
+  font-size: 2.5rem;
+}
+
+.author img {
+  border-radius: 50%;
+  width: auto;
+  height: 60px;
+}
+
+.author h3 {
+  font-size: 1.7rem;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+.author p {
+  color: #9c9c9c;
+  margin: 0;
+}

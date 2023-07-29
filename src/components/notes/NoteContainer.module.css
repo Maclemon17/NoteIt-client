@@ -13,6 +13,11 @@ main {
   align-items: center;
 }
 
+.actionsBox h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
 .buttons {
   display: flex;
   gap: 1rem;
@@ -45,7 +50,7 @@ main {
   width: 100%;
 }
 
-/* ##########   ADD NOTE   ############*/
+/* ##########   ADD NOTE CARD  ############*/
 .add {
   background-color: black !important;
   color: white;

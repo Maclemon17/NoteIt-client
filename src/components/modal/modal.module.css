@@ -127,5 +127,6 @@
 }
 
 .out {
-  animation: animateOut 300ms;
+  /* animation: animateOut 300ms; */
+
 }

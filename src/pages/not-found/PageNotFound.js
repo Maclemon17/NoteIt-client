@@ -3,10 +3,9 @@ import styles from './notFound.module.css'
 
 const PageNotFound = () => {
     return (
-        // <>
 
-        <section>
-            <div className={`container ${styles.container}`}>
+        <section className={styles.section}>
+            <div className="container">
 
                 <div className={styles.pageContent}>
                     <div className={styles.icons}>
@@ -20,7 +19,6 @@ const PageNotFound = () => {
             </div>
 
         </section>
-        // </>
     )
 }
 

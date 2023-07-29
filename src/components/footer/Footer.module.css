@@ -1,20 +1,20 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #E6E7E9;
+.footer > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e6e7e9;
 }
 
 .footer h2 {
-    user-select: none;
-    cursor: pointer;
+  user-select: none;
+  cursor: pointer;
 }
 
 .footer p {
-    color: #A4A7B2;
+  color: #a4a7b2;
 }
 
 a {
-    text-decoration: none;
-    color: unset;
-  }
+  text-decoration: none;
+  color: unset;
+}
