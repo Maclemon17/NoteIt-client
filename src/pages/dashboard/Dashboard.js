@@ -84,7 +84,7 @@ const Dashboard = ({ openModal }) => {
 
 		} catch (error) {
 			console.log(error.message);
-			toast.error("Una")
+			toast.error("Unable to delete note", toastOptions)
 		}
 	}
 
