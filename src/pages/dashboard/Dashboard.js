@@ -20,12 +20,12 @@ const Dashboard = ({ openModal }) => {
 
 	useEffect(() => {
 		if (!token) {
-			console.log("not token");
+			console.log("no token");
 			navigate("/signin");
 		}
 
 		async function authUser() {
-
+			if (token)
 			try {
 				const response = await axios.get(profileRoute, {
 					headers: {
@@ -39,7 +39,7 @@ const Dashboard = ({ openModal }) => {
 				// console.log(response.data.status);
 				if (status) {
 					setProfileData(data);
-					localStorage.setItem("profileData", data);
+					localStorage.setItem("profileData", JSON.stringify(data));
 				}
 
 			} catch (err) {
@@ -57,7 +57,7 @@ const Dashboard = ({ openModal }) => {
 		}
 
 		authUser();
-	}, [profileData, token]);
+	}, [navigate, token]);
 
 	// EDIT NO
 	const editNote = (note) => {
@@ -79,7 +79,7 @@ const Dashboard = ({ openModal }) => {
 			console.log(response);
 			const { data } = response;
 			if (data.status) {
-				toast.success("Note deleted", toastOptions)
+				toast.success("Note deleted", toastOptions);
 			}
 
 		} catch (error) {

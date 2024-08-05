@@ -95,8 +95,11 @@ const Signin = () => {
                             value={Formik.values.email}
                         />
                         {Formik.touched.email && Formik.errors.email ?
-                            (<small className={styles.errors}><i className='bi bi-info-circle'></i>{" "}
-                                {Formik.errors.email}</small>) : null
+                            (<small className={styles.errors}>
+                                <i className='bi bi-info-circle'></i>{" "}
+                                {Formik.errors.email}
+                            </small>
+                            ) : null
                         }
                     </div>
                     <div className={styles.formGroup}>
@@ -107,8 +110,11 @@ const Signin = () => {
                             onBlur={Formik.handleBlur}
                         />
                         {Formik.touched.password && Formik.errors.password ?
-                            (<small className={styles.errors}><i className='bi bi-info-circle'></i>{" "}
-                                {Formik.errors.password}</small>) : null
+                            (<small className={styles.errors}>
+                                <i className='bi bi-info-circle'></i>{" "}
+                                {Formik.errors.password}
+                            </small>
+                            ) : null
                         }
                     </div>
                     <button type='submit'>Sign in</button>

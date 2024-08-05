@@ -33,35 +33,30 @@ const Modal = ({ open, setOpenModal }) => {
         },
 
         onSubmit: async (values) => {
-            console.log(values);
-            if (Formik.touched && Formik.errors) {
-                console.log(Formik.errors)
+            try {
+                const response = await axios.post(addNoteRoute, values, {
+                    headers: {
+                        "Authorization": `Bearer ${token}`,
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    }
+                })
+                const { data } = response;
 
+                if (data.status) {
+                    toast.success("Note added successfully", toastOptions);
+                    setOpenModal(false);
+
+                } else {
+                    toast("Unable to add note", toastOptions);
+                }
+
+                console.log(data);
+            } catch (err) {
+                toast("Unable to add note, please try again", toastOptions);
+
+                console.log("ERROR", err.response.data);
             }
-             try {
-                 const response = await axios.post(addNoteRoute, values, {
-                     headers: {
-                         "Authorization": `Bearer ${token}`,
-                         "Accept": "application/json",
-                         "Content-Type": "application/json"
-                     }
-                 })
-                 const { data } = response;
- 
-                 if (data.status) {
-                     toast.success("Note added successfully", toastOptions);
-                     setOpenModal(false);
-                     
-                 } else {
-                     toast("Unable to add note", toastOptions);
-                 }
- 
-                 console.log(data);
-             } catch (err) {
-                 toast("Unable to add note, please try again", toastOptions);
- 
-                 console.log("ERROR", err.response.data);
-             }
         },
 
 
