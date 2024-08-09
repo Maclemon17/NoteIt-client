@@ -32,6 +32,12 @@ const Modal = ({ open, setOpenModal }) => {
             note: "",
         },
 
+        // VALIDATIONS
+        validationSchema: Yup.object({
+            title: Yup.string().required("Note title is required").min(2, "hh"),
+            note: Yup.string().required("Note content is required")
+        }),
+
         onSubmit: async (values) => {
             try {
                 const response = await axios.post(addNoteRoute, values, {
@@ -60,11 +66,6 @@ const Modal = ({ open, setOpenModal }) => {
         },
 
 
-        // VALIDATIONS
-        validationSchema: Yup.object({
-            title: Yup.string().required("Note title is required").min(2, "hh"),
-            note: Yup.string().required("Note content is required")
-        })
     })
 
 

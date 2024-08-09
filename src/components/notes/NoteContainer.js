@@ -6,8 +6,7 @@ import axios from 'axios';
 import { getAllNotesRoute } from '../../utils/APIRoutes';
 import { toast } from 'react-toastify';
 
-const NoteContainer = ({ setOpenModal, profileData, edit, deleteNote }) => {
-    // const token = localStorage.token;
+const NoteContainer = ({ setOpenModal, profileData, edit, handleDelete }) => {
     const [notes, setNotes] = useState(null);
 
     useEffect(() => {
@@ -78,7 +77,8 @@ const NoteContainer = ({ setOpenModal, profileData, edit, deleteNote }) => {
                             {
                                 notes ? notes.map((note, index) => (
                                     <NoteCard note={note} key={index}
-                                        edit={edit} deleteNote={deleteNote}
+                                        edit={edit}
+                                        handleDelete={handleDelete}
                                     />
                                 )) : null
                             }

@@ -2,7 +2,7 @@ import React from 'react';
 import noteStyles from './note.module.css';
 import { useNavigate } from 'react-router-dom';
 
-const NoteCard = ({ note, edit, deleteNote }) => {
+const NoteCard = ({ note, edit, handleDelete }) => {
     const navigate = useNavigate()
     // console.log(note);
     return (
@@ -23,7 +23,9 @@ const NoteCard = ({ note, edit, deleteNote }) => {
 
                         <span>
                             <i onClick={() => edit(note)} className="bi bi-pencil"></i>
-                            <i onClick={() => deleteNote(note._id)} className="bi bi-trash"></i>
+                            <i className="bi bi-trash"
+                                onClick={() => handleDelete(note._id)}>
+                            </i>
                         </span>
                     </div>
 
