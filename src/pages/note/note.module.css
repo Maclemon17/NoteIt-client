@@ -23,7 +23,7 @@
   justify-content: flex-end;
 }
 
-.actions button {
+.actions button, .back {
   border: 2px solid black;
   padding: 0.7rem 2rem;
   background-color: white;
@@ -34,7 +34,11 @@
   transition: 300ms ease-in-out;
 }
 
-.actions button:hover {
+button.back {
+  width: 15%;
+}
+
+.actions button:hover, .back:hover {
   border: none;
   background-color: black;
   color: white;

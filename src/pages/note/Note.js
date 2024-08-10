@@ -1,29 +1,30 @@
 import React from 'react'
 import styles from './note.module.css'
-import { useLocation } from 'react-router-dom'
-import { toast } from 'react-toastify';
+import { useLocation, useNavigate } from 'react-router-dom'
+import Button from '../../components/button/Button';
 
 const Note = () => {
     const { state } = useLocation();
+    const navigate = useNavigate();
 
     const editNote = () => {
         console.log("Edit note...");
     }
 
+    const prevPage = () => {
+        navigate(-1)
+    }
+
+    const text = <i className='bi bi-arrow-left-circle'></i>;
+
     return (
         <section>
             <div className={`container ${styles.pageContent}`}>
+                <Button width={"15%"} text={text} onClick={prevPage} />
+
                 <div className={styles.text} >
-                    <h2>Title {state.title}</h2>
-                    <p>
-                        {state.note} <br />
-                        Celiac pour-over fanny pack, adaptogen yuccie trust fund
-                        tote bag man braid activated charcoal narwhal church-key crucifix.
-                        Farm-to-table sartorial retro snackwave mixtape,
-                        live-edge 8-bit activated charcoal art party succulents.
-                        Crucifix actually try-hard wayfarers echo park skateboard,
-                        street art shaman intelligentsia humblebrag celiac umami farm-to-table.
-                    </p>
+                    <h2>{state.title}</h2>
+                    <p>{state.note}</p>
 
                 </div>
                 <div className={styles.timestamps}>

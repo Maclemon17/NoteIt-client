@@ -1,9 +1,14 @@
 import React from 'react';
 import styles from './button.module.css'
 
-const Button = ({ text }) => {
+const Button = ({ text, width, onClick }) => {
     return (
-        <button className={styles.btn}>{text}</button>
+        <button style={{ width: width }}
+            className={styles.btn}
+            onClick={onClick}
+        >
+            {text}
+        </button>
     )
 }
 
