@@ -10,12 +10,10 @@ import Signin from "./components/auth/signin/Signin";
 import Signup from "./components/auth/signup/Signup";
 import Modal from "./components/modal/Modal";
 import "./App.css"
-import ConfirmModal from "./components/modal/ConfirmModal";
 
 
 function App() {
 	const [modalOpen, setModalOpen] = useState(false);
-	// const [confirmModalOpen, setConfirmModalOpen] = useState(false);
 	const token = localStorage.token;
 
 	return (
@@ -24,12 +22,7 @@ function App() {
 				<Header />
 				<main>
 					{modalOpen && <Modal setOpenModal={setModalOpen} open={modalOpen} />}
-					{/* {confirmModalOpen &&
-						<ConfirmModal confirm={{ confirmDelete, setConfirmDelete }}
-							setOpenConfirmModal={setConfirmModalOpen}
-							open={confirmModalOpen}
-						/>
-					} */}
+			
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/note/:id" element={<Note />} />
